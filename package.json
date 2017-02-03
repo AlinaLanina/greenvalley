@@ -47,5 +47,8 @@
       "source": "./src",
       "build": "./build"
     }
+  },
+  "dependencies": {
+    "less-burger": "^0.1.1"
   }
 }

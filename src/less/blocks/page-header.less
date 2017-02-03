@@ -4,6 +4,8 @@
   padding-top: 15px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
+  position: relative;
+  text-align: center;
 
   &__contacts{
     display:none;
@@ -14,4 +16,32 @@
   &__inner{
     margin: 0;
   }
+
+  &__burger-menu{
+     position: absolute;
+     top:40%;
+     left:85%;
+     // position: relative;
+  }
+
+  &__burgerline{
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 5px;
+    background-color: #ff7435;
+    top:0;
+
+  }
+
+  &__burgerline:nth-child(2){
+    top:9px;
+
+  }
+
+   &__burgerline:nth-child(3){
+    top:18px;
+
+  }
+
 }

@@ -1,36 +1,92 @@
 .reviews{
-
- &__inner{
-
- }
-
- &__title{
-  font-size: 26px;
-  color: #fff;
-  width: 100%;
   text-align: center;
   background-image: url(../../img/bg-review.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+
+ &__title{
+  font-size: 26px;
+  font-family: @font-family-caption;
+  color: #fff;
+  width: 100%;
+  text-align: center;
   margin: 0;
   overflow:hidden;
   text-align: center;
   margin-top: 50px;
   padding-top: 90px;
   padding-bottom: 90px;
-
  }
 
- &__block{
+  &__item{
+    text-align: center;
+    padding-left: 44px;
+    padding-right: 44px;
+    position: relative;
+    background-color: #fff;
+   }
+
+  &__img{
+    position: absolute;
+    border: 2px solid #fff;
+    top: -8%;
+    left:37%;
+  }
+
+  &__name{
+    padding-top: 70px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 50;
+    color: #191919;
+    font-weight: bold;
+  }
+
+  &__social{
+    display: inline-block;
+    background-image: url(../img/vk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 22px;
+    height: 13px;
+  }
+
+  &__text{
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+
+  &__date{
+    padding-top: 23px;
+    padding-bottom: 29px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+  }
+
+  &__bg{
+    width: 100%;
+    background-image: url(../../img/bg-review.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 38px;
+    padding-bottom: 47px;
+  }
+
+@media screen and (max-width:320px){
+    &__item{
+      display:none;
+    }
+    &__item--320{
+      display:block;
+    }
+  }
+
 
  }
-
- &__blockitem{
-
- }
-
- &__blocktext{
-
- }
-}
