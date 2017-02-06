@@ -153,10 +153,11 @@
 
 <!-- карта -->
 
+
 <div class="map">
   <div class="map__inner">
     <h2 class="map__title">Как до нас добраться</h2>
-      <div id="map"></div>
+       <div id="map"></div>
   </div>
 </div>
 
@@ -234,28 +235,23 @@
 
 
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+
+
 <script>
 
+var map;
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: {lat: 60, lng: 30}
-  });
-
-  var image = 'img/ico-map.png';
-  var beachMarker = new google.maps.Marker({
-    position: {lat: 60.004338, lng: 30.053843},
-    map: map,
-    icon: image
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
   });
 }
 
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzb6Tbx5QVuWyCPBEeLiUykt4f1CcgQd0&signed_in=true&callback=initMap"
-async defer></script>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxtIoFIiuI8yOUXQMieWyWyHa1uyJiHzY&callback=initMap"
+        async defer></script>
 
-<script src="js/script.js"></script>
 
 </body>
 </html>
